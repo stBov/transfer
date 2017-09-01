@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pspot.mapper.InfoMapper">
+ 
+  <select id="findByGcbh" resultType="java.util.HashMap">
+    select * from xzsj_ryjbxx where GCBH = #{gcbh} AND ROWNUM = 1 ORDER BY SJC DESC
+  </select>
+
+  <select id="findByAjbh" resultType="java.util.HashMap">
+    select * from xzsj_ajjbxx where AJBH = #{ajbh} AND ROWNUM = 1 ORDER BY SJC DESC
+  </select>
+ 
+</mapper>
