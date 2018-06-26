@@ -17,7 +17,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 @SpringBootApplication
 @ComponentScan
 @MapperScan("com.pspot.mapper")
-public class SpringbootMyBatisApplication {
+public class Application {
 	
 	
 	
@@ -49,6 +49,6 @@ public class SpringbootMyBatisApplication {
 	
 	
 	public static void main(String[] args) {
-		 new SpringApplicationBuilder(SpringbootMyBatisApplication.class).web(true).run(args);
+		 new SpringApplicationBuilder(Application.class).web(true).run(args);
 	}
 }

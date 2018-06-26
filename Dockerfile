@@ -1,5 +1,5 @@
 From hub.c.163.com/library/ubuntu:latest
-MAINTAINER yuchen
+MAINTAINER ssj
 ADD jdk-8u73-linux-x64.tar.gz /usr/local
 RUN mv /usr/local/jdk1.8.0_73 /usr/local/jdk1.8
 ENV JAVA_HOME /usr/local/jdk1.8
